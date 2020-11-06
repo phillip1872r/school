@@ -87,7 +87,7 @@ public class MeinProgramm
             {
                 switch (dieTastatur.zeichen())
                 {
-                    case Zeichen.PLUS: aktiveFigur.bewegeUm(5, 0); break;
+                    case Zeichen.PFEILRECHTS: aktiveFigur.bewegeUm(5, 0); break;
                     
                      
                 }
