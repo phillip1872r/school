@@ -89,7 +89,8 @@ public class MeinProgramm
             {
                 switch (dieTastatur.zeichen())
                 {
-                    case Zeichen.PFEILRECHTS: aktiveFigur.bewegeUm(5, 0); break;
+                    case Zeichen.BILDAUF: Figur.groessePlus(); break;
+                    case Zeichen.BILDUNTER: Figur.groesseMinus(); break;
                     
                      
                 }
