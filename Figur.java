@@ -28,12 +28,12 @@ public abstract class Figur
 
     // Dienste
     
-    public void groessePlus()
+    public  void groessePlus()
     {
         groesse = groesse + 1;
     }
     
-        public void groesseMinus()
+        public  void groesseMinus()
     {
         groesse = groesse - 1;
     }
