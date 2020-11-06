@@ -79,7 +79,7 @@ public class MeinProgramm
                     case Zeichen.PFEILLINKS: aktiveFigur.bewegeUm(-5, 0); break;
                     case Zeichen.PFEILOBEN: aktiveFigur.bewegeUm(0, -5); break;
                     case Zeichen.PFEILUNTEN: aktiveFigur.bewegeUm(0, 5); break;
-                    case 
+                     
                 }
                 dieTastatur.weiter();
             }

@@ -37,8 +37,5 @@ public class Ring extends Figur
             
     }
     
-    public void ringja()
-    {
-        System.out.println("Ja");
-    }
+   
 }
