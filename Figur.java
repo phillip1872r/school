@@ -27,6 +27,17 @@ public abstract class Figur
     }
 
     // Dienste
+    
+    public void groessePlus()
+    {
+        groesse = groesse + 1;
+    }
+    
+        public void groesseMinus()
+    {
+        groesse = groesse - 1;
+    }
+
 
     protected abstract void zeichne();
 
