@@ -88,7 +88,7 @@ public class MeinProgramm
                 switch (dieTastatur.zeichen())
                 {
                     case Zeichen.BILDAUF: Figur.groessePlus(); break;
-                    case Zeichen.BILDUNTER: Figur.groesseMinus(); break;
+                    case Zeichen.BILDUNTEN: Figur.groesseMinus(); break;
                     
                      
                 }
