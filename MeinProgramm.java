@@ -85,20 +85,20 @@ public class MeinProgramm
                 }
                 dieTastatur.weiter();
             }
+        
+            
+        } while (!dieMaus.doppelKlick());
             if (dieTastatur.wurdeGedrueckt() && aktiveFigur != null)
             {
                 switch (dieTastatur.zeichen())
                 {
-                    case Zeichen.BILDAUF: Figur.groessePlus(); break;
-                    case Zeichen.BILDUNTER: Figur.groesseMinus(); break;
+                    case Zeichen.F1: aktiveFigur.groessePlus(); break;
+                    case Zeichen.BILDUNTEN: aktiveFigur.groesseMinus(); break;
                     
                      
                 }
                 dieTastatur.weiter();
             }
-            
-        } while (!dieMaus.doppelKlick());
-        
         // Aufraeumen
         derBildschirm.gibFrei();
     }
