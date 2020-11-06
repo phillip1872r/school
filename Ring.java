@@ -36,4 +36,9 @@ public class Ring extends Figur
             && pV <= this.getStift().vPosition()+ this.getGroesse();
             
     }
+    
+    public void ringja()
+    {
+        System.out.println("Ja");
+    }
 }
