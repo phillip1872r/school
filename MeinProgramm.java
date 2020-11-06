@@ -33,12 +33,14 @@ public class MeinProgramm
         meinQuadrat1 = new Quadrat(150, 300, 50, Farbe.ORANGE);
         meinQuadrat2 = new Quadrat(250, 50, 40, Farbe.CYAN);
         meinQuadrat3 = new Quadrat(350, 250, 80, Farbe.MAGENTA);
+        
                 
         // Aktionsteil
         aktiveFigur = meinRechteck;
         aktiveFigur.aktiviere();
         do
         {
+            
             if (dieMaus.istGedrueckt())
             {
                 if (aktiveFigur != null)
@@ -79,7 +81,7 @@ public class MeinProgramm
                     case Zeichen.PFEILLINKS: aktiveFigur.bewegeUm(-5, 0); break;
                     case Zeichen.PFEILOBEN: aktiveFigur.bewegeUm(0, -5); break;
                     case Zeichen.PFEILUNTEN: aktiveFigur.bewegeUm(0, 5); break;
-                     
+                    
                 }
                 dieTastatur.weiter();
             }
