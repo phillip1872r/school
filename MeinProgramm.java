@@ -85,6 +85,17 @@ public class MeinProgramm
                 }
                 dieTastatur.weiter();
             }
+            if (dieTastatur.wurdeGedrueckt() && aktiveFigur != null)
+            {
+                switch (dieTastatur.zeichen())
+                {
+                    case Zeichen.PFEILRECHTS: aktiveFigur.bewegeUm(5, 0); break;
+                    
+                     
+                }
+                dieTastatur.weiter();
+            }
+            
         } while (!dieMaus.doppelKlick());
         
         // Aufraeumen
