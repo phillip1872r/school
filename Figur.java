@@ -30,12 +30,20 @@ public abstract class Figur
     
     public  void groessePlus()
     {
-
+        stift.radiere();
+        groesse = groesse + 10;
+        this.zeichne();
+        stift.normal();
+        this.zeichne();
     }
     
         public  void groesseMinus()
     {
-        groesse = groesse - 20;
+         stift.radiere();
+        groesse = groesse - 10;
+        this.zeichne();
+        stift.normal();
+        this.zeichne();
     }
 
 
