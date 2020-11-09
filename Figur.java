@@ -9,7 +9,7 @@ public abstract class Figur
     private Buntstift stift, stift2;
 
     // Attribute
-    private static int groesse;
+    private  int groesse;
     private boolean aktiv;
 
     // Konstruktor
@@ -28,14 +28,26 @@ public abstract class Figur
 
     // Dienste
     
-    public static void groessePlus()
+    public  void groessePlus()
     {
-        groesse = groesse + 20;
+        stift.radiere();
+        groesse = groesse + 10;
+        this.zeichne();
+        stift.normal();
+        this.zeichne();
     }
     
+<<<<<<< HEAD
     public static void groesseMinus()
+=======
+        public  void groesseMinus()
+>>>>>>> 3fbe93d9938e61c9a9ed1ce83d34ce2c88d101c6
     {
-        groesse = groesse - 20;
+         stift.radiere();
+        groesse = groesse - 10;
+        this.zeichne();
+        stift.normal();
+        this.zeichne();
     }
 
 

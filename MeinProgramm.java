@@ -33,12 +33,14 @@ public class MeinProgramm
         meinQuadrat1 = new Quadrat(150, 300, 50, Farbe.ORANGE);
         meinQuadrat2 = new Quadrat(250, 50, 40, Farbe.CYAN);
         meinQuadrat3 = new Quadrat(350, 250, 80, Farbe.MAGENTA);
+        
                 
         // Aktionsteil
         aktiveFigur = meinRechteck;
         aktiveFigur.aktiviere();
         do
         {
+            
             if (dieMaus.istGedrueckt())
             {
                 if (aktiveFigur != null)
@@ -79,12 +81,16 @@ public class MeinProgramm
                     case Zeichen.PFEILLINKS: aktiveFigur.bewegeUm(-5, 0); break;
                     case Zeichen.PFEILOBEN: aktiveFigur.bewegeUm(0, -5); break;
                     case Zeichen.PFEILUNTEN: aktiveFigur.bewegeUm(0, 5); break;
-                     
+                    
                 }
                 dieTastatur.weiter();
             }
+        
+            
+        } while (!dieMaus.doppelKlick());
             if (dieTastatur.wurdeGedrueckt() && aktiveFigur != null)
             {
+<<<<<<< HEAD
                if (dieTastatur.zeichen() == '+') 
                {
                   Figur.groessePlus();                
@@ -94,11 +100,27 @@ public class MeinProgramm
                   Figur.groesseMinus();                
                }
             
+=======
+                switch (dieTastatur.zeichen())
+                {
+
+                    case Zeichen.F1: aktiveFigur.groessePlus(); break;
+                    case Zeichen.BILDUNTEN: aktiveFigur.groesseMinus(); break;
+
+                  
+                    
+                     
+                }
+                dieTastatur.weiter();
+>>>>>>> 3fbe93d9938e61c9a9ed1ce83d34ce2c88d101c6
             }
-            
-        } while (!dieMaus.doppelKlick());
-        
         // Aufraeumen
         derBildschirm.gibFrei();
+    }
+    
+    public void groesser()
+    {
+       
+    
     }
 }
