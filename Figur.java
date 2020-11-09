@@ -37,11 +37,12 @@ public abstract class Figur
         this.zeichne();
     }
     
-<<<<<<< HEAD
-    public static void groesseMinus()
-=======
+
+
+
+
         public  void groesseMinus()
->>>>>>> 3fbe93d9938e61c9a9ed1ce83d34ce2c88d101c6
+
     {
          stift.radiere();
         groesse = groesse - 10;
