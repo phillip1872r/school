@@ -92,8 +92,11 @@ public class MeinProgramm
             {
                 switch (dieTastatur.zeichen())
                 {
+
                     case Zeichen.F1: aktiveFigur.groessePlus(); break;
                     case Zeichen.BILDUNTEN: aktiveFigur.groesseMinus(); break;
+
+                  
                     
                      
                 }
@@ -101,5 +104,11 @@ public class MeinProgramm
             }
         // Aufraeumen
         derBildschirm.gibFrei();
+    }
+    
+    public void groesser()
+    {
+       
+    
     }
 }

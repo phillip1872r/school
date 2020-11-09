@@ -9,7 +9,7 @@ public abstract class Figur
     private Buntstift stift, stift2;
 
     // Attribute
-    private int groesse;
+    private  int groesse;
     private boolean aktiv;
 
     // Konstruktor
