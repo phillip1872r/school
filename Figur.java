@@ -33,7 +33,7 @@ public abstract class Figur
         groesse = groesse + 20;
     }
     
-        public static void groesseMinus()
+    public static void groesseMinus()
     {
         groesse = groesse - 20;
     }

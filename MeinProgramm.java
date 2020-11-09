@@ -85,14 +85,15 @@ public class MeinProgramm
             }
             if (dieTastatur.wurdeGedrueckt() && aktiveFigur != null)
             {
-                switch (dieTastatur.zeichen())
-                {
-                    case Zeichen.BILDAUF: Figur.groessePlus(); break;
-                    case Zeichen.BILDUNTEN: Figur.groesseMinus(); break;
-                    
-                     
-                }
-                dieTastatur.weiter();
+               if (dieTastatur.zeichen() == '+') 
+               {
+                  Figur.groessePlus();                
+               }
+               if (dieTastatur.zeichen() == '-') 
+               {
+                  Figur.groesseMinus();                
+               }
+            
             }
             
         } while (!dieMaus.doppelKlick());
